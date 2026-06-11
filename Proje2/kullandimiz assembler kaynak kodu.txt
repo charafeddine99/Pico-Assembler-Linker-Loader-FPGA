@@ -1,0 +1,18 @@
+MAIN   CSECT
+       EXTDEF RE1
+       EXTDEF HALT1
+       EXTREF GET42
+       EXTREF WRLED
+BASLA  JAL x1, GET42    ; Makine Kodu: 0C200000 (Doğru!)
+RE1    JAL x1, WRLED    ; Makine Kodu: 0C200000 (Doğru!)
+HALT1  JAL x0, HALT1    ; Makine Kodu: 0C000000 (Doğru!)
+LOGIC  CSECT
+       EXTDEF GET42
+       EXTREF RE1
+GET42  ADDI x10, x0, 42 ; Makine Kodu: 200A002A (Doğru!)
+       JAL x0, RE1      ; RE1 Dışarıda olduğu için 0C000000 (Doğru!)
+IODRV  CSECT
+       EXTDEF WRLED
+       EXTREF HALT1
+WRLED  SW x10, 128(x0)  ; Makine Kodu: AC0A0080 (Doğru!)
+       JAL x0, HALT1    ; HALT1 Dışarıda olduğu için 0C000000 (Doğru!)

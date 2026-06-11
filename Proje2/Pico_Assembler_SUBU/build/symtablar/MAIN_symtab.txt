@@ -1,0 +1,6 @@
+PROJE: MAIN
+ETIKET		ADRES
+-------------------------
+BASLA     	000000
+RE1       	000004
+HALT1     	000008

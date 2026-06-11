@@ -1,0 +1,11 @@
+EXTERNAL SYMBOL TABLE
+------------------------------------------------------------
+MODULE          SYMBOL          ADDRESS
+------------------------------------------------------------
+MAIN            MAIN            000000
+MAIN            RE1             000004
+MAIN            HALT1           000008
+LOGIC           LOGIC           00000C
+LOGIC           GET42           00000C
+IODRV           IODRV           000014
+IODRV           WRLED           000014

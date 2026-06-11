@@ -1,0 +1,4 @@
+PROJE: LOGIC
+ETIKET		ADRES
+-------------------------
+GET42     	000000
