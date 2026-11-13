@@ -36,8 +36,8 @@ Assembly (.asm) ──► Assembler ──► .obj ──► Linker ──► ou
 
 ## Getting started
 
-**Hardware:** Tang Nano 9K board connected over USB (UART).
-**Software:** Gowin FPGA Designer and Programmer, Python 3.10+ and `pyserial`.
+- **Hardware:** Tang Nano 9K board connected over USB (UART).
+- **Software:** Gowin FPGA Designer and Programmer, Python 3.10+ and `pyserial`.
 
 ```bash
 git clone https://github.com/charafeddine99/Pico-Assembler-Linker-Loader-FPGA.git
